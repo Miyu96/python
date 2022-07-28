@@ -1,4 +1,7 @@
 def roots( n ) :
+    if n==1 :
+        return True
+    
     for i in range(1, n//2+1) :
         if(i*i == n) :
             return True
@@ -15,7 +18,7 @@ def solution(left, right):
            
     return answer
 
-left = 24
-right = 27
+left = 1
+right = 2
 c = solution(left, right)
 print(c)

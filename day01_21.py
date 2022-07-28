@@ -1,16 +1,17 @@
 def check( n ) :
-    length = len(str(n))
+    n_str = str(n)
+    le = len(n_str)
     num1 = 0
     num2 = 0
     
-    for i in range(length) :
-        if i<length//2 :
-            num1+=n[i]
+    for i in range(le) :
+        if i<le//2 :
+            num1+=int(n_str[i])
         else :
-            num2+=n[i]    
+            num2+=int(n_str[i])    
 
     if num1 == num2 :
-        print('Lucky')
+        print('LUCKY')
     else :
         print('READY')    
 
